@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #d6edcf;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #square1,
+        #square2,
+        #square3,
+        #square4,
+        #square5,
+        #square6,
+        #square7,
+        #square8,
+        #square9 {
+            background-size: cover;
+            cursor: pointer;
+            opacity: 0%;
+            padding: auto;
+            width: 100px;
+            height: 100px;
+        }
+
+        div {
+            display: inline-block;
+            border: 1px solid rgb(248, 248, 248);
+
+        }
+
+        .con {
+            display: block;
+            width: 350px;
+        }
+
+        
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-12">
+                <h1>猜猜下面的东西是什么</h1>
+            </div>
+        </div>
+        <div class="row">
+
+            <div>
+                <div id="square1" onclick="toggleBackground(this)" style="background-image: url('./img/1.png');">
+                </div>
+            </div>
+            <div>
+                <div id="square2" onclick="toggleBackground(this)" style="background-image: url('./img/1.png');">
+                </div>
+            </div>
+            <div>
+                <div id="square3" onclick="toggleBackground(this)" style="background-image: url('./img/1.png');">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div>
+                <div id="square4" onclick="toggleBackground(this)" style="background-image: url('./img/1.png');">
+                </div>
+            </div>
+            <div>
+                <div id="square5" onclick="toggleBackground(this)" style="background-image: url('./img/1.png');">
+                </div>
+            </div>
+            <div>
+                <div id="square6" onclick="toggleBackground(this)" style="background-image: url('./img/1.png');">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <div id="square7" onclick="toggleBackground(this)" style="background-image: url('./img/1.png');">
+                </div>
+            </div>
+            <div>
+                <div id="square8" onclick="toggleBackground(this)" style="background-image: url('./img/1.png');">
+                </div>
+            </div>
+            <div>
+                <div id="square9" onclick="toggleBackground(this)" style="background-image: url('./img/1.png');">
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="time">您的用时</div>
+            <button id="change">换一个</button>
+            <input type="text" value="在此输入你的答案">
+            <button value="提交">提交</button>
+        </div>
+    </div>
+    <script>
+        function toggleBackground(element) {
+            // 检查当前元素的透明度
+            if (element.style.opacity === "100%") {
+                // 如果透明度已经是50%，则将其设置回初始透明度10%
+                element.style.opacity = "0%";
+            } else {
+                // 否则，将透明度设置为50%
+                element.style.opacity = "100%";
+            }
+        }
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

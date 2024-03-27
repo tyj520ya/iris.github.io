@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>猜东西</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="./img/Puzzle.png">
+</head>
+
+<body>
+    <header class="heading-container">
+        <h1>猜猜下面的东西是什么</h1>
+    </header>
+
+    <div class="main">
+        <div class="lcont">
+            <div class="container">
+                <div class="bor">
+                    <div id="square1" onclick="toggleBackground(this)" ;">
+                    </div>
+                </div>
+                <div class="bor">
+                    <div id="square2" onclick="toggleBackground(this)" ;">
+                    </div>
+                </div>
+                <div class="bor">
+                    <div id="square3" onclick="toggleBackground(this)" ;">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="bor">
+                    <div id="square4" onclick="toggleBackground(this)" ;">
+                    </div>
+                </div>
+                <div class="bor">
+                    <div id="square5" onclick="toggleBackground(this)" ;">
+                    </div>
+                </div>
+                <div class="bor">
+                    <div id="square6" onclick="toggleBackground(this)" ;">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="bor">
+                    <div id="square7" onclick="toggleBackground(this)" ;">
+                    </div>
+                </div>
+                <div class="bor">
+                    <div id="square8" onclick="toggleBackground(this)" ;">
+                    </div>
+                </div>
+                <div class="bor">
+                    <div id="square9" onclick="toggleBackground(this)" ;">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mcont">
+
+            <div id="time1"><label class="time">您的用时<br>
+                    <div id="timerDisplay">0秒</div>
+                </label></div>
+
+
+            <br>
+
+            <br><br>
+
+            <div class="answer">
+                <form id="answerForm">
+                    <label for="">在此输入你的答案</label>
+                    <input type="text" id="answerInput">
+                    <button value="提交" type="submit">提交</button>
+                </form>
+                <button id="change">换一个</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./script/script.js"></script>
+</body>
+
+</html>

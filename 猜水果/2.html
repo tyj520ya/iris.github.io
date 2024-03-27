@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show/Hide Background Image on Click</title>
+    <!-- 引入Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #d6edcf;
+        }
+
+        .square {
+            width: 100px;
+            height: 100px;
+            background-size: cover;
+            cursor: pointer;
+            opacity: 0%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="square" id="square1" onclick="toggleBackground(this)"
+                    style="background-image: url('./img/1.png');"></div>
+            </div>
+            <div class="col-4">
+                <div class="square" id="square2" onclick="toggleBackground(this)"
+                    style="background-image: url('./img/1.png');"></div>
+            </div>
+            <div class="col-4">
+                <div class="square" id="square3" onclick="toggleBackground(this)"
+                    style="background-image: url('./img/1.png');"></div>
+            </div>
+            <!-- 重复上面的div结构以放置更多方块 -->
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function toggleBackground(element) {
+            if (element.style.opacity === "100%") {
+                element.style.opacity = "0%";
+            } else {
+                element.style.opacity = "100%";
+            }
+        }
+    </script>
+</body>
+
+</html>

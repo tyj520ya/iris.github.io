@@ -1,0 +1,183 @@
+body {
+    background-color: #d6edcf;
+    margin: 0;
+    padding: 0;
+    background-image: url("../img/下载.jpg");
+    /* background-color: rgb(237, 250, 249); */
+    background-size: cover;
+    /* TODO:图片将被缩放以填充整个容器 */
+    background-position: center;
+    background-attachment: fixed;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#square1,
+#square2,
+#square3,
+#square4,
+#square5,
+#square6,
+#square7,
+#square8,
+#square9 {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    cursor: pointer;
+    opacity: 0%;
+    padding: auto;
+    border: 1px solid rgb(248, 248, 248);
+}
+
+div {
+    display: inline-block;
+}
+
+.heading-container {
+    display: block;
+    padding: 20px;
+    text-align: center;
+    /* 调整标题与内容的间距 */
+    text-align: center;
+    box-shadow: 0px 10px 30px hsla(0, 84%, 93%, 0.2);
+    /* backdrop-filter: blur(2px); */
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.753);
+    margin-top: 0px;
+    z-index: 5;
+}
+
+.container {
+    display: block;
+    width: 320px;
+}
+
+.lcont {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(4px);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.mcont {
+    width: 200px;
+    margin-left: 100px;
+    /* 调整间距 */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+}
+
+/* header {
+    width: 100vh;
+    text-align: center;
+    padding-top: 20px;
+    color: azure;
+} */
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+input {
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    /* background-color: #007bff; */
+    color: white;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+    width: 140px;
+}
+
+hover {
+    background-color: #0056b3;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: rgb(37, 37, 36);
+    font-weight: 1000;
+    text-align: center;
+}
+
+button {
+    width: 180px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    /* 确保padding不会影响总宽度 */
+    margin: 10px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+button[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+
+/* 输入框中的提示文本样式 */
+input[type="text"]::placeholder {
+    color: #999;
+    /* 修改提示文本颜色 */
+    font-style: italic;
+    /* 修改提示文本样式，比如斜体 */
+}
+
+/* 输入框中的实际输入文本样式 */
+input[type="text"] {
+    color: black;
+    /* 修改输入文本颜色 */
+    font-style: normal;
+    /* 修改输入文本样式 */
+}
+
+.bor {
+    border: 1px solid rgba(248, 248, 248, 0.184);
+}
+
+.answer {
+    background-color: rgba(255, 255, 255, 0.345);
+    backdrop-filter: blur(4px);
+    padding: 25px;
+    border-radius: 2px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 200px;
+}
+
+#time1 {
+    background-color: rgba(255, 255, 255, 0.345);
+    backdrop-filter: blur(4px);
+    padding: 25px;
+    border-radius: 2px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 200px
+}
