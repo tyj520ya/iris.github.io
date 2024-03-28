@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>宇宙毁灭倒计时</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-image: url(微信图片_20230805110021.jpg);
+            background-size: cover;
+            color: #FFFFFF;
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            flex-direction: column;
+        }
+
+        h1 {
+            font-size: 48px;
+        }
+
+        #countdown {
+            font-size: 90px;
+            margin: 30px 0;
+            color: #ff0000;
+        }
+        .glass{
+            border-radius: 10px;
+            box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
+            border: 1px solid #999;
+            backdrop-filter: blur(5px);
+            z-index: 1;
+            margin: 10px;
+            padding: 20px 40px;
+            text-shadow: 0 0 20px rgba(68, 4, 4, 0.4);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>宇宙毁灭倒计时</h1>
+    <div id="countdown" class="glass"></div>
+
+    <script>
+        // 设置目标日期和时间（以毫秒为单位）
+        var targetDate = new Date("2030-12-31T23:59:59Z").getTime();
+
+        // 更新倒计时
+        var countdownInterval = setInterval(function () {
+            var now = new Date().getTime();
+            var distance = targetDate - now;
+
+            // 计算剩余的时间
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // 显示倒计时
+            document.getElementById("countdown").innerHTML = days + "天 " + hours + "时 " + minutes + "分 " + seconds + "秒";
+
+            // 倒计时结束时清除定时器
+            if (distance < 0) {
+                clearInterval(countdownInterval);
+                document.getElementById("countdown").innerHTML = "宇宙已毁灭！";
+            }
+        }, 1000);
+    </script>
+    <h1>预计宇宙毁灭时间 </h1>
+    <h1>公元2030年12月31日23时59分59秒
+    </h1>
+    <p class="glass" style="font-size: 40px;"><a href="流浪地球.html">返回主页</a></p>
+</body>
+
+</html>
